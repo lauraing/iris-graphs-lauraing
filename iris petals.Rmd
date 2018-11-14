@@ -1,0 +1,23 @@
+---
+title: "Iris Petal Graphs"
+author: "Laura Ingulsrud"
+date: "11/13/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+
+View(iris)
+library(tidyverse)
+
+iris_graph <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width)) +
+  geom_point()
+
+iris_graph
+
+```
+
