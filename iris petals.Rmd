@@ -15,7 +15,9 @@ View(iris)
 library(tidyverse)
 
 iris_graph <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width)) +
-  geom_point()
+  geom_point() +
+  theme_classic() +
+  labs (x = "Petal Length (mm)", y = "Petal Width (mm)")
 
 iris_graph
 
